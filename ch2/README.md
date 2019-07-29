@@ -29,6 +29,9 @@
 ## 取得其他的service
 
 ## 数组与函数
+## 数组与函数
+## 数组与函数
+## 数组与函数
 
 ## Dependency inject & Minif.（angularJS）
 
