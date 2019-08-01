@@ -26,7 +26,29 @@
 
 ## angularjs 是如何实现‘依赖注入’的
 
+```
+angular.injector().annotate(function);
+```
+- 此方法可以把function的参数转行成字符串，然后分别存在
+数组中。
+
+- [$scope](服务)在方法的参数的任意位置，angularJS都可以
+识别处理，并准确传递到函数中（依赖注入）。关键的是service的参数名称
+写对，否则angularJS识别不出来。
+- $scope service 是一个非常重要的service，能够将变量或者
+函数与view做连结
+
 ## 取得其他的service
+- 注意：angularJS会检查和读取参数列表，然后将对象传递
+至对于的参数位置，会辨认参数，并且传递正确的内容。以上
+是基于（依赖注入）实现的
+- 了解其他service的方式：
+1.看源码(在官网里面找angularJS没被压缩的js文件)
+2.看api参考文档
+1.https://angularjs.org/
+2.https://angularjs.io/
+
+
 
 ## 数组与函数
 
